@@ -11,7 +11,7 @@
 		"InstanceType": "t2.micro",
         "AvailabilityZone": "us-east-1a",
         "SubnetId": "subnet-a0a6fff8",
-        "SecurityGroupIds": "sg-046c92fff4ac51280",
+        "SecurityGroupIds": ["sg-046c92fff4ac51280"],
         "KeyName": "sdpPoc"
       }
     }
