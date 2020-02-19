@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('CloudFormation: StackCreate') {
+            steps {
+		    sh "export AWS_DEFAULT_REGION=us-east-1"
+                    sh "aws cloudformation delete-stack --stack-name CreateEC2Stack --region 'us-east-1'"                  
+            }
+        }
+    }
+}
