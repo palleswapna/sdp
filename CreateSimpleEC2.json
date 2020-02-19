@@ -8,11 +8,15 @@
       "Type": "AWS::EC2::Instance",
       "Properties": {
         "ImageId": "ami-07ebfd5b3428b6f4d",
-		"InstanceType": "t2.micro",
+	"InstanceType": "t2.micro",
         "AvailabilityZone": "us-east-1a",
         "SubnetId": "subnet-a0a6fff8",
         "SecurityGroupIds": ["sg-046c92fff4ac51280"],
-        "KeyName": "sdpPoc"
+        "KeyName": "sdpPoc",
+	"Tags": [{
+          "Key": "Name",
+          "Value": "EC2ByJenkins"
+        }]
       }
     }
   }
